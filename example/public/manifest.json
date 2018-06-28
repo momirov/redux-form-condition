@@ -1,0 +1,8 @@
+{
+  "short_name": "redux-form-condition",
+  "name": "redux-form-condition",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
