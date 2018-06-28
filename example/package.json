@@ -8,8 +8,11 @@
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "redux-form-condition": "link:..",
-    "react-scripts": "^1.1.1"
+    "react-redux": "^5.0.7",
+    "react-scripts": "^1.1.1",
+    "redux": "^4.0.0",
+    "redux-form": "^7.4.2",
+    "redux-form-condition": "link:.."
   },
   "scripts": {
     "start": "react-scripts start",

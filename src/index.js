@@ -2,25 +2,21 @@
  * @class ExampleComponent
  */
 
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
+import { formValues } from 'redux-form';
 
-import styles from './styles.css'
+const Condition = ({ when, is, value, children }) => (
+  <React.Fragment>
+    { value === is ? children : null }
+  </React.Fragment>
+);
 
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
+Condition.propTypes = {
+  when: PropTypes.string.isRequired,
+  value: PropTypes.any,
+  is: PropTypes.any,
+  children: PropTypes.node.isRequired,
+};
 
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
-}
+export default formValues(props => ({ value: props.when }))(Condition);

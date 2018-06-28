@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-
-import ExampleComponent from 'redux-form-condition'
+import SelectingFormValuesForm from './SelectingFormValues';
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <SelectingFormValuesForm />
       </div>
     )
   }
